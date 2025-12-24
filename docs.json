@@ -26,32 +26,17 @@
         "tab": "Workflows",
         "groups": [
           {
-            "group": "Voice Workflows",
+            "group": "Voice & Messaging Workflows",
             "pages": [
-              "Workflow/inbound",
-              "Workflow/outbound"
-            ]
-          },
-          {
-            "group": "Agent & Content Management",
-            "pages": [
-              "Workflow/agents",
-              "Workflow/call-scripts"
-            ]
-          },
-          {
-            "group": "Messaging & Integrations",
-            "pages": [
-              "Workflow/whatsapp",
-              "Workflow/composio"
-            ]
-          },
-          {
-            "group": "Billing & Administration",
-            "pages": [
-              "Workflow/plans",
-              "Workflow/phone-numbers",
-              "Workflow/settings"
+              "workflows/inbound",
+              "workflows/outbound",
+              "workflows/agents",
+              "workflows/call-scripts",
+              "workflows/whatsapp",
+              "workflows/composio",
+              "workflows/plans",
+              "workflows/phone-numbers",
+              "workflows/settings"
             ]
           }
         ]
@@ -61,39 +46,20 @@
 
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/light.svg"
+    "dark": "/logo/dark.svg"
   },
 
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:support@agentspanel.com"
+        "href": "mailto:hi@agentspanel.com"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
       "href": "https://dashboard.agentspanel.com"
-    }
-  },
-
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "cursor",
-      "vscode"
-    ]
-  },
-
-  "footer": {
-    "socials": {
-      "github": "https://github.com/AgentsPanel",
-      "linkedin": "https://www.linkedin.com/company/agentspanel"
     }
   }
 }
