@@ -15,7 +15,7 @@
         "tab": "Overview",
         "groups": [
           {
-            "group": "Introduction",
+            "group": "Getting Started",
             "pages": [
               "index"
             ]
@@ -26,10 +26,15 @@
         "tab": "Workflows",
         "groups": [
           {
-            "group": "Voice & Agent Workflows",
+            "group": "Voice Workflows",
             "pages": [
               "Workflow/inbound",
-              "Workflow/outbound",
+              "Workflow/outbound"
+            ]
+          },
+          {
+            "group": "Agent & Content Management",
+            "pages": [
               "Workflow/agents",
               "Workflow/call-scripts"
             ]
@@ -50,38 +55,13 @@
             ]
           }
         ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          }
-        ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Dashboard",
-          "href": "https://dashboard.agentspanel.com",
-          "icon": "layout-dashboard"
-        },
-        {
-          "anchor": "Support",
-          "href": "mailto:support@agentspanel.com",
-          "icon": "life-ring"
-        }
-      ]
-    }
+    ]
   },
 
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/light.svg"
   },
 
   "navbar": {
@@ -93,7 +73,7 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Open Dashboard",
+      "label": "Dashboard",
       "href": "https://dashboard.agentspanel.com"
     }
   },
@@ -112,9 +92,8 @@
 
   "footer": {
     "socials": {
-      "x": "https://x.com/agentspanel",
-      "github": "https://github.com/agentspanel",
-      "linkedin": "https://linkedin.com/company/agentspanel"
+      "github": "https://github.com/AgentsPanel",
+      "linkedin": "https://www.linkedin.com/company/agentspanel"
     }
   }
 }
