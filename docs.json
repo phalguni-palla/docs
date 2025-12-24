@@ -17,7 +17,7 @@
           {
             "group": "Introduction",
             "pages": [
-              "overview/index"
+              "index"
             ]
           }
         ]
@@ -26,32 +26,38 @@
         "tab": "Workflows",
         "groups": [
           {
-            "group": "Core Voice Workflows",
+            "group": "Voice & Agent Workflows",
             "pages": [
-              "workflows/inbound",
-              "workflows/outbound"
-            ]
-          },
-          {
-            "group": "Agent & Content Management",
-            "pages": [
-              "workflows/agents",
-              "workflows/call-scripts"
+              "Workflow/inbound",
+              "Workflow/outbound",
+              "Workflow/agents",
+              "Workflow/call-scripts"
             ]
           },
           {
             "group": "Messaging & Integrations",
             "pages": [
-              "workflows/whatsapp",
-              "workflows/composio"
+              "Workflow/whatsapp",
+              "Workflow/composio"
             ]
           },
           {
             "group": "Billing & Administration",
             "pages": [
-              "workflows/plans",
-              "workflows/phone-numbers",
-              "workflows/settings"
+              "Workflow/plans",
+              "Workflow/phone-numbers",
+              "Workflow/settings"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "API Documentation",
+            "pages": [
+              "api-reference/introduction"
             ]
           }
         ]
