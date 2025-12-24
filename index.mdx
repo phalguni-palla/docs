@@ -10,94 +10,216 @@ description: "Official documentation for Agents Panel – AI voice agents, inbou
 
 Welcome to **Agents Panel** — an end-to-end platform for building, running, and monitoring **AI-powered voice and messaging agents**.
 
-This documentation is written for:
+Agents Panel is designed for operations teams, admins, and business users who want to deploy AI agents across calls and messaging channels **without managing telephony or AI infrastructure**.
 
-- Operations teams
-
-- Admins and managers
-
-- Non-technical users running AI agents at scale
-
-No infrastructure knowledge required.
+This documentation explains how the platform works, what each module is responsible for, and how users interact with the system day to day.
 
 ---
 
-## 🌟 What you can do with Agents Panel
+## 🌟 Quickstart Overview
 
-### 🤖 AI Voice Agents
+### **Core Modules**
 
-Create AI agents with a defined persona, goals, and knowledge base that represent your business on calls.
+- **🤖 Agents** — Create and manage AI voice agents with persona, goals, and compliance controls  
 
-### ☎️ Inbound Calls
+- **☎️ Inbound** — Handle customer-initiated calls with real-time AI conversations  
 
-Handle customer-initiated calls with real-time AI conversations, transcripts, and analytics.
+- **📞 Outbound** — Launch and monitor AI-driven outbound calling campaigns  
 
-### 📞 Outbound Campaigns
+- **📝 Call Scripts** — Author, test, and reuse AI call scripts  
 
-Launch proactive AI calling campaigns with scripts, targets, credits, and dashboards.
+- **💬 WhatsApp** — Deploy AI agents on WhatsApp for chat and voice  
 
-### 💬 WhatsApp Agents
+- **🔌 Composio** — Connect external tools (CRM, calendars, messaging) to AI agents  
 
-Deploy AI agents on WhatsApp for chat and voice interactions.
+- **📱 Phone Numbers** — Purchase and manage phone numbers used by agents  
 
-### 🔌 Integrations
+- **💳 Plans & Billing** — Manage subscriptions, credits, and usage  
 
-Connect external tools like CRMs, calendars, and messaging platforms using Composio.
-
-### 💳 Billing & Credits
-
-Manage subscriptions, plans, credits, and phone number inventory.
+- **⚙️ Settings** — Control users, roles, API keys, and organization configuration  
 
 ---
 
-## 🧭 How this documentation is organized
+## ⚙️ Platform Overview
 
-### Overview
-
-High-level understanding of what Agents Panel is and how to get started.
-
-### Workflows
-
-Step-by-step, **user-centric workflows** explaining how each module works in practice:
-
-- Inbound
-
-- Outbound
-
-- Agents
-
-- Call Scripts
-
-- WhatsApp
-
-- Composio
-
-- Plans
-
-- Phone Numbers
-
-- Settings
-
-Each workflow explains:
-
-- When to use the module
-
-- What actions users perform
-
-- What happens next in the system
+Agents Panel is organized around **four functional layers**, each responsible for a different part of the AI agent lifecycle.
 
 ---
 
-## 🚀 Where to start
+## **1️⃣ Agent & Conversation Foundation**
 
-- New users → **Agents → Inbound / Outbound**
+### **🤖 Agents**
 
-- Ops teams → **Outbound, Phone Numbers, Plans**
+Agents define **who speaks and how they speak** on behalf of your organization.
 
-- Admins → **Settings, Composio, Billing**
+Each agent includes:
 
-👉 Use the **Workflows tab** to dive into any module.
+- Voice identity (phone number)
+
+- Persona and conversational behavior
+
+- Recording consent and compliance settings
+
+- Knowledge base (RAG) configuration
+
+- Assignment to inbound or outbound usage
+
+Agents act as the shared foundation for all calling and messaging workflows.
 
 ---
 
-If something isn’t clear, this documentation is designed so you **never need to read code or ask engineering**.
+### **📝 Call Scripts**
+
+Call Scripts define **what the agent says** during outbound conversations.
+
+They allow teams to:
+
+- Generate scripts using AI
+
+- Edit and refine call flows
+
+- Test scripts in real-time voice simulations
+
+- Reuse vetted scripts across campaigns
+
+Scripts ensure consistency and quality before any live calls are made.
+
+---
+
+## **2️⃣ Voice & Messaging Workflows**
+
+### **☎️ Inbound**
+
+Inbound handles calls initiated by customers.
+
+It supports:
+
+- Routing calls to the correct AI agent
+
+- Real-time AI conversations
+
+- Live transcripts and post-call analytics
+
+- Compliance enforcement and handoff to humans
+
+Inbound workflows are typically used for support, reception, and customer inquiries.
+
+---
+
+### **📞 Outbound**
+
+Outbound enables proactive AI calling at scale.
+
+It allows teams to:
+
+- Create outbound campaigns
+
+- Upload or manage call targets
+
+- Assign agents and scripts
+
+- Monitor live progress and outcomes
+
+- Review transcripts and analytics
+
+Outbound workflows are commonly used for sales, follow-ups, reminders, and outreach.
+
+---
+
+### **💬 WhatsApp**
+
+The WhatsApp module extends AI agents to messaging channels.
+
+Teams can:
+
+- Connect WhatsApp business numbers
+
+- Define AI behavior for chat and voice
+
+- Monitor conversations and analytics per number
+
+This enables a unified AI experience across calls and messaging.
+
+---
+
+## **3️⃣ Integrations & Extensions**
+
+### **🔌 Composio**
+
+Composio allows AI agents to interact with external tools.
+
+From this section, teams can:
+
+- Browse available integrations
+
+- Connect third-party services
+
+- Control which actions AI agents are allowed to perform
+
+This makes AI agents operationally useful beyond conversations.
+
+---
+
+## **4️⃣ Billing, Resources & Administration**
+
+### **📱 Phone Numbers**
+
+Manage the phone numbers used by AI agents.
+
+This includes:
+
+- Renting or assigning numbers
+
+- Tracking usage
+
+- Managing inventory across teams or organizations
+
+---
+
+### **💳 Plans**
+
+Plans define:
+
+- Available features
+
+- Included credits
+
+- Usage limits
+
+Users can review, upgrade, or downgrade plans based on operational needs.
+
+---
+
+### **⚙️ Settings**
+
+Settings act as the central administration hub.
+
+From here, users can manage:
+
+- Organization details
+
+- API keys
+
+- Team members and roles
+
+- Credit usage and transactions
+
+- Subscription status
+
+---
+
+## 🧭 How to Use This Documentation
+
+- Start with the **Workflows** section to understand real user flows  
+
+- Each workflow explains **what happens when a user performs an action**  
+
+- Content is written to be **non-technical and role-agnostic**
+
+This documentation is meant to help teams **operate Agents Panel confidently**, without needing engineering support.
+
+---
+
+## 🚀 Where to Go Next
+
+👉 Use the **Workflows** tab to explore detailed, step-by-step guides for each module.
