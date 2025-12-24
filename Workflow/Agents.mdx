@@ -1,0 +1,99 @@
+---
+title: "Agents"
+---
+
+# Agents Module – Workflow & Overview
+
+## Purpose
+
+The **Agents module** is the command center for defining and managing **AI voice agents** (phone numbers) used across **inbound call handling** and **outbound campaigns**.
+
+Each agent encapsulates:
+
+- Telephony identity (provider + phone number)
+- Persona and conversational behavior
+- Knowledge-base (RAG) configuration
+- Recording consent and compliance flags
+- Assignment metadata (inbound / outbound)
+
+This module acts as the **single source of truth** for agent configuration and is consumed by outbound campaigns, inbound webhooks, analytics dashboards, and billing workflows.
+
+## Core Responsibilities
+
+- Provision and manage AI voice agents
+- Store persona and prompt configuration
+- Control recording consent and compliance
+- Enable/disable knowledge-base (RAG)
+- Assign agents to inbound or outbound roles
+- Expose agent data to all downstream modules
+- Hydrate frontend state via profile APIs
+
+## Workflow:
+
+### 1. Creating an Agent
+
+1. User clicks **Add Agent**
+2. AddAgentModal shows up and collects the following details:
+   - Phone number
+   - Agent Type
+   - Agent Name
+   - Department Name
+   - Gender
+   - Personality
+6. Click on "Add Number"
+7. If the Phone Number is not yet assigned to any other agent, new Agent will be created and shown in the Agents section.
+8. If the Phone Number is assigned to any other agent, the screen shows:         "**Phone number already exists!**"
+
+### 2. Viewing & Selecting Agents
+
+- VoiceAgents which are previously created are shown in the \*\*Agents \*\*section.
+- This section has a search bar which supports searching for a particular agent.
+- Selecting an agent sets it as **active**
+- Active agent drives:
+  - Agent dashboards
+  - Outbound module selections
+  - Analytics context
+
+Webhook URLs for inbound providers are available per agent.
+
+### 3. Editing Agent Metadata
+
+When the user clicks on an Agent, the Agent's dashboard will be opened. There clicking on the settings icon opens the Settings Modal which has the Agent's details which can be edited as per the requirement. The details include:
+
+- Updating persona & goals
+- Uploading knowledge-base documents
+- Enabling/disabling RAG
+- Updating handoff number
+- Toggling recording consent
+
+### 4. Assigning Agents to Inbound / Outbound
+
+Agents must be explicitly assigned to either **Inbound** or **Outbound** usage before they can participate in call workflows.
+
+When an assignment action is performed from the Agents, Inbound, or Outbound views, the selected agent is marked for the chosen call direction. This designation determines where the agent becomes available across the platform. This is done in the respective sections: \*\*Inbound \*\*or **Outbound.**
+
+Once assigned:
+
+- Agents marked for **Inbound** appear only within the Inbound section and are used to handle incoming calls.
+- Agents marked for **Outbound** become available during outbound campaign creation and execution.
+
+## Advantages & Design Rationale
+
+- **Centralized control plane** for all agent behavior
+- **Strong compliance guarantees** via explicit consent and assignment
+- **Tight telephony integration** with pre-provisioned webhooks
+- **Immediate UI feedback** through React Query invalidation
+- **Modular backend services** allow safe extensibility
+
+---
+
+## Summary
+
+The Agents module defines **who speaks, how they speak, and under what rules** across the entire Agents Panel platform.
+
+By centralizing persona, telephony, compliance, and knowledge-base configuration, it enables:
+
+- Consistent AI behavior
+- Safe outbound execution
+- Reliable inbound routing
+- Scalable analytics and learning loops

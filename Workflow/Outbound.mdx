@@ -1,0 +1,160 @@
+---
+title: "Outbound"
+---
+
+# Outbound Module – Workflow & Overview
+
+## Purpose
+
+The **Outbound module** enables organizations to **run AI-driven outbound calling campaigns** to proactively reach customers, leads, or users.
+
+It allows teams to define who the AI agent is, what the agent says, whom to call, and how calls progress from start to completion. The module provides full visibility into campaign execution, call outcomes, and performance metrics.
+
+Outbound campaigns rely on previously created **Agents** and **Call Scripts**, ensuring consistency in persona, tone, and compliance.
+
+## Core Responsibilities
+
+- Create and manage outbound calling campaigns
+- Select outbound-assigned agents and approved call scripts
+- Upload and manage call targets
+- Launch and control campaign execution
+- Monitor live and completed calls
+- Review campaign performance and outcomes
+
+## Workflow:
+
+### 1. Preparing for an Outbound Campaign
+
+Before creating a campaign, at least one agent must already be assigned to **Outbound**.
+
+Only outbound-assigned agents are available for selection, ensuring the correct phone numbers and personas are used for outreach.
+
+### 2. Creating an Outbound Campaign
+
+When the user opens the **Outbound** section, all existing campaigns are displayed.
+
+Clicking **Create Campaign** opens the campaign setup flow, where the following details are provided:
+
+- Campaign name
+- Campaign type
+- Call script selection
+- Target list (uploaded using a CSV file or entered manually)
+
+During this process:
+
+- Saved call scripts can be reused
+- Required personalization fields are highlighted
+- Target details are validated before proceeding
+- Once completed, the campaign is saved and remains inactive until started.
+
+### 3. Selecting Call Scripts
+
+During campaign creation, the user selects a previously created call script.
+
+When a script is selected:
+
+- The script content is automatically applied to the campaign
+- Required custom variables are identified
+- The campaign cannot be started until all required values are provided
+- This ensures all outbound calls follow an approved and tested conversation flow.
+
+### 4. Starting an Outbound Campaign
+
+When the user clicks **Start Campaign**:
+
+- The system validates the campaign setup
+- Confirms no other campaign is currently running
+- Ensures sufficient credits are available
+
+Once validated:
+
+- The campaign becomes active
+- Outbound calls begin automatically
+- Only one campaign can run at a time, helping prevent overlap and unintended usage.
+
+### 5. Executing Outbound Calls
+
+As the campaign runs:
+
+- Calls are placed sequentially to the target list
+- Each call uses the selected agent’s persona and script
+- Conversations occur naturally in real time
+
+For each call:
+
+- Call duration is tracked
+- Conversation transcripts are generated
+- Call outcomes are recorded
+- Each call is treated independently while contributing to overall campaign progress.
+
+### 6. Monitoring Campaign Progress
+
+While the campaign is active, the campaign dashboard provides visibility into:
+
+- Overall progress of the campaign
+- Number of completed and pending calls
+- Recent call outcomes
+
+From this view, users can:
+
+- Inspect individual call details
+- Review transcripts
+- Pause or stop the campaign if needed
+- This allows close monitoring while the campaign is in progress.
+
+### 7. Call Completion & Continuation
+
+After each call completes:
+
+- The call outcome is recorded
+- The next eligible target is automatically processed
+
+This continues until:
+
+- All targets are completed, or
+- The campaign is paused or cancelled
+- Once all targets are completed, the campaign is automatically marked as completed.
+
+### 8. Pausing, Rerunning, and Editing Campaigns
+
+The Outbound module provides flexibility to manage campaigns even after they start.
+
+Users can:
+
+- Pause an active campaign
+- Resume a paused campaign
+- Rerun calls for failed or unanswered targets
+- Edit target lists before rerunning
+- This allows campaigns to be adjusted without recreating them from scratch.
+
+### 9. Reviewing Campaign Results
+
+After a campaign completes, users can review:
+
+- Total calls made
+- Completion rate
+- Average call duration
+- Individual call transcripts
+
+These insights help evaluate campaign effectiveness and inform future outreach strategies.
+
+## Advantages & Design Rationale
+
+- Clear separation of outbound campaigns from inbound call handling
+- Consistent AI behavior through agent and script reuse
+- Controlled campaign execution to avoid overlap
+- Real-time visibility into campaign progress
+- Simple management without manual intervention
+
+## Summary
+
+The **Outbound module** is the execution layer for proactive AI-driven outreach in Agents Panel.
+
+It allows teams to:
+
+- Design structured outbound campaigns
+- Reuse approved agents and call scripts
+- Monitor calls as they happen
+- Analyze outcomes and improve future campaigns
+
+By combining campaign creation, execution, and analytics into a single workflow, the Outbound module enables organizations to confidently run outbound calling operations at scale with clarity and control.

@@ -1,68 +1,57 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Agents Panel Documentation",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
+
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Overview",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Introduction",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "overview/index"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Workflows",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Core Voice Workflows",
             "pages": [
-              "api-reference/introduction"
+              "workflows/inbound",
+              "workflows/outbound"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Agent & Content Management",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "workflows/agents",
+              "workflows/call-scripts"
+            ]
+          },
+          {
+            "group": "Messaging & Integrations",
+            "pages": [
+              "workflows/whatsapp",
+              "workflows/composio"
+            ]
+          },
+          {
+            "group": "Billing & Administration",
+            "pages": [
+              "workflows/plans",
+              "workflows/phone-numbers",
+              "workflows/settings"
             ]
           }
         ]
@@ -71,52 +60,55 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Dashboard",
+          "href": "https://dashboard.agentspanel.com",
+          "icon": "layout-dashboard"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Support",
+          "href": "mailto:support@agentspanel.com",
+          "icon": "life-ring"
         }
       ]
     }
   },
+
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
+
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@agentspanel.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Open Dashboard",
+      "href": "https://dashboard.agentspanel.com"
     }
   },
+
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "cursor",
+      "vscode"
+    ]
   },
+
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/agentspanel",
+      "github": "https://github.com/agentspanel",
+      "linkedin": "https://linkedin.com/company/agentspanel"
     }
   }
 }
