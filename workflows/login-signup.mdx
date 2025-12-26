@@ -1,0 +1,121 @@
+---
+title: "Login Signup"
+---
+
+# Login & Signup – Workflow & User Experience
+
+## Purpose
+
+The Login & Signup flow serves as the entry point into **Agents Panel**.\
+It allows new users to create an organization workspace and existing users to securely access their dashboard.
+
+This flow is designed to ensure:
+
+- Fast onboarding for new teams
+- Frictionless access for returning users
+- Clear feedback during authentication
+- Immediate readiness after login
+
+## Core Responsibilities
+
+- Allow new users to register and create an organization
+- Authenticate returning users securely
+- Establish an active user session
+- Redirect users to the appropriate dashboard context
+- Provide clear error and success feedback during authentication
+
+## Workflow:
+
+### 1. Accessing Login or Signup
+
+When a user visits Agents Panel, they are presented with two public entry points:
+
+- **Login** for existing users
+- **Signup** for new users
+
+All other areas of the platform remain inaccessible until authentication is completed.
+
+### 2. Signing Up (New Users)
+
+When a user opens the **Signup** page, a simple registration form is displayed.
+
+The form collects:
+
+- Full name
+- Email address
+- Organization name
+- Contact number
+- Password
+
+Field labels and placeholders are written in clear, human-readable language to reduce confusion.
+
+### 3. Completing Registration
+
+After filling in the required details, the user submits the form.
+
+At this stage:
+
+- Input validation runs immediately
+- Any missing or incorrect fields are highlighted inline
+- Clear messages explain what needs to be corrected
+
+On successful submission:
+
+- The user account is created
+- A new organization workspace is initialized
+- The user is assigned administrative access
+- A success message is shown
+- The user is redirected to the **Login** page
+
+This ensures every signup results in a fully usable workspace, not just a standalone user account.
+
+### 4. Logging In (Returning Users)
+
+The **Login** page presents a minimal interface with:
+
+- Email
+- Password
+
+Additional navigation options include:
+
+- **Forgot Password**
+- **Create Account** (for users who reached login first)
+
+### 5. Authentication and Access
+
+When the user submits login credentials:
+
+- The system verifies the details
+- A loading indicator is shown during processing
+- Errors appear inline if authentication fails
+
+On successful login:
+
+- The session is established
+- User and organization context is loaded
+- The user is redirected to the main dashboard
+
+This transition is seamless and does not require additional setup steps.
+
+### 6. Session Lifecycle
+
+Once authenticated:
+
+- The user remains logged in across page refreshes
+- The platform restores the active workspace automatically
+- All actions are performed within the authenticated session
+
+When the user logs out:
+
+- The session is cleared
+- Access is revoked immediately
+- The user is redirected back to the Login page
+
+## Summary:
+
+- **New users** can sign up once and immediately access a ready-to-use organization
+- **Existing users** can log in quickly and resume work without reconfiguration
+- Errors are visible, clear, and actionable
+- Authentication never blocks users with technical complexity
+
+This flow ensures that teams can move from first visit to active usage of Agents Panel with minimal friction and maximum clarity.
