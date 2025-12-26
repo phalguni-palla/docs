@@ -16,7 +16,8 @@ title: "Phone Numbers"
 
 The **Phone Numbers section** is where organizations **view, rent, manage, and allocate phone numbers** used across inbound calls, outbound campaigns, and WhatsApp integrations.
 
-This section supports both **self-serve number management for organizations** and **centralized inventory control for super admins**, ensuring phone numbers are sourced, assigned, and tracked in a controlled and transparent way.
+This section supports **self-serve number management for organizations**, ensuring phone numbers are sourced, assigned, and tracked in a controlled and transparent way.
+This also supports the unrenting of numbers which are not required anymore from the same place.
 
 ## Core Responsibilities
 
@@ -24,12 +25,10 @@ This section supports both **self-serve number management for organizations** an
 - Allow organizations to purchase Phone Numbers on rental basis
 - Track pending number requests tied to subscription plans
 - Ensure accurate ownership and usage visibility
+- Allow organizations to unrent unwanted Phone Numbers
 
-## Role-Based Experience
 
-The Phone Numbers section adapts automatically based on the user’s role.
-
-## Workflow (Organization Users)
+## Workflow
 
 ### 1. Viewing Assigned Phone Numbers
 
@@ -58,8 +57,6 @@ Within this flow:
 - Available phone numbers are displayed
 - Filters help narrow choices by prefix or pattern
 - Users can select a number and proceed with purchase
-- If the organization’s current plan already includes phone numbers:
-- A clear banner explains that numbers are being fulfilled
 - Duplicate purchases are prevented automatically
 - Once the purchase is completed, the new number appears in the assigned list.
 
@@ -71,55 +68,11 @@ If a phone number request is still being processed:
 - Users can see that the request is in progress
 - This provides transparency without requiring follow-ups or support tickets.
 
-## Workflow (Super Admins)
-
-### 4. Purchasing Phone Numbers for the Bank
-
-Super admins see additional controls when opening the **Phone Numbers** section.
-
-From the **Purchase** view, admins can:
-
-- Search available inventory by country, city, or pattern
-- Select multiple phone numbers at once
-- Bulk-purchase numbers into the central phone number bank
-- This allows efficient sourcing of inventory for all organizations.
-
-### 5. Managing the Phone Number Bank
-
-The **Phone Number Bank** view displays all unassigned phone numbers owned by the company.
-
-From here, super admins can:
-
-- View purchase details for each number
-- Assign numbers to organizations
-- De-assign numbers when they are returned
-- Assignments are performed through a guided selection flow, ensuring clear ownership tracking.
-
-### 6. Handling Pending Requests
-
-When an organization’s plan includes phone numbers that are not immediately available, a request appears in **Pending Requests**.
-
-From this view, super admins can:
-
-- Open a pending request
-- Select phone numbers from the bank inventory
-- Fulfill part or all of the requested quantity
-- This ensures organizations receive the phone numbers their subscription guarantees.
-
-## Ongoing Visibility & Control
-
-At all times, the Phone Numbers section provides clear insight into:
-
-- Which organization owns which phone numbers
-- Which numbers are unassigned and available
-- Which requests are still pending
-- This prevents misallocation and ensures accurate auditing across the platform.
 
 ## Advantages & Design Rationale
 
-- Clear separation between organization and admin workflows
 - Self-service number management for organizations
-- Centralized inventory control for administrators
+- Centralized inventory control
 - Transparent handling of pending requests
 - Reduced dependency on manual coordination or support
 
@@ -130,7 +83,6 @@ The **Phone Numbers section** acts as the inventory and allocation hub for all p
 It enables:
 
 - Organizations to manage phone numbers independently
-- Administrators to source and distribute numbers centrally
 - Clear tracking of ownership and usage across the platform
 
-By combining role-aware views, guided workflows, and centralized visibility, the Phone Numbers section ensures phone number management remains simple, scalable, and auditable for everyone involved.
+By combining guided workflows, and centralized visibility, the Phone Numbers section ensures phone number management remains simple, scalable, and auditable for everyone involved.
