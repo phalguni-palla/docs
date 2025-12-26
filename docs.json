@@ -28,6 +28,7 @@
           {
             "group": "Voice & Messaging Workflows",
             "pages": [
+              "workflows/login-signup",
               "workflows/inbound",
               "workflows/outbound",
               "workflows/agents",
